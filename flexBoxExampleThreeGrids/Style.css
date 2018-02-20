@@ -1,0 +1,26 @@
+﻿.container {
+    display: grid;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+}
+
+div.row
+
+
+div.row_cell {
+    display: flex;
+    flex: 1;     /*flex: 1 1 0*/
+}
+
+div.row_cell--2 {
+    display: flex;
+    flex: 2;
+}
+
+div.row_cell--3 {
+    flex: 3;
+}
