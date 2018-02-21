@@ -2,25 +2,84 @@
     display: grid;
 }
 
+/*===== Visuals =====*/
+
 div.row {
-    display: flex;
-    flex-direction: row;
-    background-color: lightblue;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.08);
+    margin: 8px 0;
+} 
+
+div.row_cell,
+div.row_cell--2,
+div.row_cell--3 {
+    background-color: rgba(0,0,0,0.13);
+    padding: 10px 0;
+    margin: 5px;
 }
 
-div.row
+body {
+    color: rgba(0,0,0,0.7);
+    font-size: 0.9em;
+}
 
+h4 {
+    padding: 20px 10px 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/*====== Flexbox Grids =====*/
+
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Basic Grids*/
 
 div.row_cell {
-    display: flex;
     flex: 1;     /*flex: 1 1 0*/
 }
 
+/*Specific Sizes*/
+
 div.row_cell--2 {
-    display: flex;
     flex: 2;
 }
 
 div.row_cell--3 {
     flex: 3;
 }
+
+/*Specific Alignments*/
+
+div.row_cell--top {
+    align-self:flex-start;
+}
+
+div.row_cell--bottom {
+    align-self: flex-end;
+}
+
+div.row_cell--center {
+    align-self: center;
+}
+
+/*Entire Row Alignment*/
+
+div.row--top {
+    align-items: flex-start;
+}
+
+div.row--center {
+    align-items: center;
+}
+
+div.row--bottom {
+    align-items: flex-end;
+
+/*===== Nested Rows =====*/
+}
+
